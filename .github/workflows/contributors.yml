@@ -11,7 +11,7 @@ jobs:
     #   with:
     #     repository: Ge-Wit-t-Oit-Noit-Nie/2025-software
     #     # submodules: true
-    # - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
     #   with:
     #     repository: Ge-Wit-t-Oit-Noit-Nie/hardware
     - uses: BobAnkh/add-contributors@master
