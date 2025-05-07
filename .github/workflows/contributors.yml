@@ -7,13 +7,7 @@ jobs:
   add-contributors:
     runs-on: ubuntu-latest
     steps:
-    # - uses: actions/checkout@v2
-    #   with:
-    #     repository: Ge-Wit-t-Oit-Noit-Nie/2025-software
-    #     # submodules: true
     - uses: actions/checkout@v2
-    #   with:
-    #     repository: Ge-Wit-t-Oit-Noit-Nie/hardware
     - uses: BobAnkh/add-contributors@master
       with:
         CONTRIBUTOR: '## Contributors'
@@ -21,7 +15,7 @@ jobs:
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         IMG_WIDTH: '100'
         FONT_SIZE: '14'
-        PATH: '\README.md'
-        COMMIT_MESSAGE: 'docs(about): update contributors'
+        PATH: '/README.md'
+        COMMIT_MESSAGE: 'docs(README): update contributors'
         AVATAR_SHAPE: 'round'
 
