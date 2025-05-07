@@ -21,7 +21,7 @@ jobs:
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         IMG_WIDTH: '100'
         FONT_SIZE: '14'
-        PATH: '\docs\about.md'
+        PATH: '\README.md'
         COMMIT_MESSAGE: 'docs(about): update contributors'
         AVATAR_SHAPE: 'round'
 
