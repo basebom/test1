@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: fregante/setup-git-user@v1
+    # - uses: fregante/setup-git-user@v1
     - name: Add contributors to test1
       run: |
           git remote add -f test2 https://github.com/basebom/test2.git
