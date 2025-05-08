@@ -11,9 +11,12 @@ jobs:
     # - uses: fregante/setup-git-user@v1
     - name: Add contributors to test1
       run: |
-          git remote add -f test2 https://github.com/basebom/test2.git
-          git fetch test2 --tags
-          git merge --allow-unrelated-histories
+
+        git remote rm origin
+        git remote add origin https://github.com/basebom/test2.git
+        git fetch
+        git checkout main
+        git pull origin main --allow-unrelated-histories
     - uses: BobAnkh/add-contributors@master
       with:
         CONTRIBUTOR: '## Contributors'
