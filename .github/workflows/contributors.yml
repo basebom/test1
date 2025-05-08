@@ -9,8 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: fregante/setup-git-user@v1
-    - name: Add contributors to test1
-      run: git subtree add --prefix=test2-temp https://github.com/basebom/test2.git main
+    # - name: Add contributors to test1
+    #   run: git subtree add --prefix=test2-temp https://github.com/basebom/test2.git main
     - uses: BobAnkh/add-contributors@master
       with:
         CONTRIBUTOR: '## Contributors'
